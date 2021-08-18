@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+</head>
+<body>
+  <header>
+    <h1>Library</h1>
+  </header>
+  <main>
+    <form id="book-form" hidden>
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title" required>
+      <label for="author">Author</label>
+      <input type="text" name="author" id="author" required>
+      <label for="numberOfPages">Number of Pages</label>
+      <input type="number" name="numberOfPages" id="numberOfPages" required>
+      <label for="read">Read?</label>
+      <input type="checkbox" name="read" id="read">
+      <button id="submit-book">Submit</button>
+    </form>
+    <button id="new-book">New Book</button>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Number of Pages</th>
+            <th>Read</th>
+            <th>Remove Book</th>
+            <th>Toggle Read</th>
+          </tr>
+        </thead>
+        <tbody id="book-table-body">
+
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
